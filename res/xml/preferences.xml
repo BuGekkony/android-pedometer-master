@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="@string/steps_settings_title">
+            
+        <ListPreference
+                android:key="sensitivity"
+                android:title="@string/sensitivity_setting"
+                android:summary="@string/sensitivity_setting_details"
+                android:entries="@array/sensitivity_preference"
+                android:entryValues="@array/sensitivity_preference_values"
+                android:dialogTitle="@string/sensitivity_setting_title"
+                android:defaultValue="30" />
+
+
+        <name.bagi.levente.pedometer.preferences.StepLengthPreference
+                android:key="step_length"
+                android:title="@string/step_length_setting"
+                android:summary="@string/step_length_setting_details"
+                android:dialogTitle="@string/step_length_setting_title"
+                android:defaultValue="20" />
+            
+        <name.bagi.levente.pedometer.preferences.BodyWeightPreference
+                android:key="body_weight"
+                android:title="@string/body_weight_setting"
+                android:summary="@string/body_weight_setting_details"
+                android:dialogTitle="@string/body_weight_setting_title"
+                android:defaultValue="50" />
+
+        <name.bagi.levente.pedometer.preferences.HeightPreference
+                android:key="height"
+                android:title="@string/height_setting"
+                android:summary="@string/height_setting_details"
+                android:dialogTitle="@string/height_setting_title"
+                android:defaultValue="170" />
+
+        <name.bagi.levente.pedometer.preferences.AgePreference
+                android:key="age"
+                android:title="@string/age_setting"
+                android:summary="@string/age_setting_details"
+                android:dialogTitle="@string/age_setting_title"
+                android:defaultValue="20" />
+        <name.bagi.levente.pedometer.preferences.WristSize
+                android:key="wrist"
+                android:title="@string/wrist_size_setting"
+                android:summary="@string/wrist_size_setting_details"
+                android:dialogTitle="@string/wrist_size_setting_title"
+                android:defaultValue="20" />
+
+        <ListPreference
+                android:key="sex"
+                android:title="@string/sex_type_setting"
+                android:summary="@string/sex_type_setting_details"
+                android:entries="@array/sex_type_preference"
+                android:entryValues="@array/sex_type_preference_values"
+                android:dialogTitle="@string/sex_type_setting_title"
+                android:defaultValue="female" />
+
+        <ListPreference
+                android:key="exercise_type"
+                android:title="@string/exercise_type_setting"
+                android:summary="@string/exercise_type_setting_details"
+                android:entries="@array/exercise_type_preference"
+                android:entryValues="@array/exercise_type_preference_values"
+                android:dialogTitle="@string/exercise_type_setting_title"
+                android:defaultValue="running" />
+
+
+
+
+  </PreferenceCategory>
+    
+</PreferenceScreen>

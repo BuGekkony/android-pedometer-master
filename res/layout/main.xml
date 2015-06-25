@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/margin" 
+    android:background="@color/screen_background">
+    
+    <LinearLayout android:id="@+id/row_1"
+        android:orientation="horizontal" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:paddingBottom="@dimen/row_spacing">
+    
+        <LinearLayout android:id="@+id/box_steps"
+            android:orientation="vertical"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingRight="@dimen/margin"
+            android:layout_weight="1">
+        
+            <TextView android:id="@+id/step_value"
+                android:textSize="@dimen/value"
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" 
+                android:background="@color/display_background" 
+                android:paddingLeft="@dimen/padding" 
+                android:paddingRight="@dimen/padding" 
+                android:paddingTop="@dimen/padding"
+                android:text=""/>
+            <TextView android:id="@+id/step_units"
+                android:gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/units" 
+                android:text="@string/steps" 
+                android:background="@color/display_background" 
+                android:paddingBottom="@dimen/padding"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/box_distance"
+            android:orientation="vertical"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+            
+            <TextView android:id="@+id/distance_value"
+                android:textSize="@dimen/value"
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" 
+                android:background="@color/display_background" 
+                android:paddingTop="@dimen/padding" 
+                android:paddingRight="@dimen/padding" 
+                android:paddingLeft="@dimen/padding"
+                android:text=""/>
+            <TextView android:id="@+id/distance_units"
+                android:gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/units"
+                android:text="@string/kilometers" 
+                android:background="@color/display_background" 
+                android:paddingBottom="@dimen/padding"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/row_2"
+                  android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:paddingBottom="@dimen/row_spacing">
+
+        <LinearLayout android:id="@+id/box_calories"
+                      android:orientation="vertical"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                >
+
+            <TextView android:id="@+id/calories_value"
+                      android:gravity="center_horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/display_background"
+                      android:textSize="@dimen/small_value"
+                      android:paddingLeft="@dimen/padding"
+                      android:paddingRight="@dimen/padding"
+                      android:paddingTop="@dimen/padding"
+                      android:layout_weight="3.72"/>
+            <TextView android:id="@+id/calories_units"
+                      android:gravity="center_horizontal"
+                      android:layout_width="186dp"
+                      android:layout_height="20dp"
+                      android:textSize="@dimen/units"
+                      android:text="@string/calories_burned"
+                      android:paddingBottom="@dimen/padding"
+                      android:background="@color/display_background" android:layout_weight="1"/>
+
+        </LinearLayout>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/add_2"
+                android:id="@+id/add_burned"/>
+        <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/decryption_4"
+                android:id="@+id/decryption_burned"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/row_3"
+                  android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:paddingBottom="@dimen/row_spacing" android:weightSum="1">
+
+        <LinearLayout android:id="@+id/box_calories_pri"
+                      android:orientation="vertical"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                >
+
+            <TextView android:id="@+id/calories_value_pri"
+                      android:gravity="center_horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/display_background"
+                      android:textSize="@dimen/small_value"
+                      android:paddingLeft="@dimen/padding"
+                      android:paddingRight="@dimen/padding"
+                      android:paddingTop="@dimen/padding"
+                      android:text=""/>
+            <TextView android:id="@+id/calories_took"
+                      android:gravity="center_horizontal"
+                      android:layout_width="186dp"
+                      android:layout_height="20dp"
+                      android:textSize="@dimen/units"
+                      android:text="@string/calories_took"
+                      android:paddingBottom="@dimen/padding"
+                      android:background="@color/display_background"/>
+
+        </LinearLayout>
+        <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/add"
+                android:id="@+id/add_calorie"/>
+        <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/decryption_2"
+                android:id="@+id/decryption_calorie"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/row_4"
+                  android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:paddingBottom="@dimen/row_spacing" android:weightSum="1">
+
+        <LinearLayout android:id="@+id/box_BMI"
+                      android:orientation="vertical"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                >
+
+            <TextView android:id="@+id/raznica_value"
+                      android:gravity="center_horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/display_background"
+                      android:textSize="@dimen/small_value"
+                      android:paddingLeft="@dimen/padding"
+                      android:paddingRight="@dimen/padding"
+                      android:paddingTop="@dimen/padding"
+                      android:text=""/>
+            <TextView android:id="@+id/balance"
+                      android:gravity="center_horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:textSize="@dimen/units"
+                      android:text="@string/balance"
+                      android:paddingBottom="@dimen/padding"
+                      android:background="@color/display_background"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Desired pace/speed row -->
+    <LinearLayout
+            android:id="@+id/desired_pace_control"
+            android:paddingTop="@dimen/row_spacing"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" android:weightSum="1">
+
+
+
+        <!-- Container for .... -->
+        <Button
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:text="@string/sport"
+                android:id="@+id/bmi" android:layout_gravity="bottom" android:layout_weight="0.56"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_statistics"
+                android:id="@+id/btn_statistic" android:layout_gravity="bottom" android:layout_weight="0.31"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recommendations"
+                android:id="@+id/btn_recommendations" android:layout_gravity="bottom" android:layout_weight="0.31"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

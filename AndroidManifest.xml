@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="name.bagi.levente.pedometer"
+      android:versionCode="5" android:versionName="1.4.0"
+      android:installLocation="auto">
+      
+    <uses-sdk android:minSdkVersion="4" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".Pedometer"
+                  android:label="@string/app_name"
+                  android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Settings"
+                android:label="@string/activity_settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".CaloriesBurned" android:label="@string/cal_burned"/>
+        <activity android:name=".DecryptionBurned" android:label="@string/decryp_burned"/>
+        <activity android:name=".AddCalorie" android:label="@string/add_cal"/>
+        <activity android:name=".DecryptionCalorie" android:label="@string/decryption_cal"/>
+        <activity android:name=".BMI" android:label="@string/bmi"/>
+        <activity android:name=".MyStatistics" android:label="@string/mystatistics"/>
+        <activity android:name=".FirstCourses" android:label="Первые блюда"/>
+        <activity android:name=".MainDishes" android:label="Вторые блюда"/>
+        <activity android:name=".Garnishes" android:label="Гарниры"/>
+        <activity android:name=".Desserts" android:label="Десерты"/>
+        <activity android:name=".Snacks" android:label="Закуски"/>
+        <activity android:name=".Drinks" android:label="Напитки"/>
+        <activity android:name=".Recommendations" android:label="Рекомендации"/>
+
+        <service android:name=".StepService"/>
+
+    </application>
+
+</manifest> 
