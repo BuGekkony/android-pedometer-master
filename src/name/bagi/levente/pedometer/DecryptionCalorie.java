@@ -33,22 +33,16 @@ public class DecryptionCalorie extends Activity {
         snack = (TextView) findViewById(R.id.snack);
         drink = (TextView) findViewById(R.id.drink);
 /*все в Ккал*/
-        //first.setText(Double.toString(Pedometer.first_courses1));
         first.setText("" + ((double)((int)(Pedometer.first_courses1*10)))/10);
 
-        //main.setText(Double.toString(Pedometer.main_dishes1));
         main.setText("" + ((double)((int)(Pedometer.main_dishes1*10)))/10);
 
-        //gar.setText(Double.toString(Pedometer.garnishes1));
         gar.setText("" + ((double)((int)(Pedometer.garnishes1*10)))/10);
 
-        //dessert.setText(Double.toString(Pedometer.desserts1));
         dessert.setText("" + ((double)((int)(Pedometer.desserts1*10)))/10);
 
-        //snack.setText(Double.toString(Pedometer.snacks1));
         snack.setText("" + ((double)((int)(Pedometer.snacks1*10)))/10);
 
-        //drink.setText(Double.toString(Pedometer.drinks1));
         drink.setText("" + ((double)((int)(Pedometer.drinks1*10)))/10);
 
     }

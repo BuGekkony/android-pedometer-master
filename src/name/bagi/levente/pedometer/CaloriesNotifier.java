@@ -17,10 +17,8 @@ public class CaloriesNotifier implements StepListener {
     private Listener mListener;
     
     private static double METRIC_RUNNING_FACTOR = 1.02784823;
-   // private static double IMPERIAL_RUNNING_FACTOR = 0.75031498;
 
     private static double METRIC_WALKING_FACTOR = 0.708;
-   // private static double IMPERIAL_WALKING_FACTOR = 0.517;
 
     private double mCalories = 0;
     
